@@ -1,11 +1,11 @@
-<script lang="ts">
+<script >
 export const description
   = "A sidebar that collapses to icons."
 export const iframeHeight = "800px"
 export const containerClass = "w-full h-full"
 </script>
 
-<script setup lang="ts">
+<script setup >
 import AppSidebar from "./AppSidebar.vue"
 import {
   Breadcrumb,
@@ -22,6 +22,8 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar/index"
 
+import { Link } from '@inertiajs/vue3'
+
 </script>
 
 <template>
@@ -35,8 +37,8 @@ import {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem class="hidden md:block">
-                <BreadcrumbLink href="/">
-                  Home
+                <BreadcrumbLink>
+                  <Link href="/" :class="$page.url === '/' ? 'bg-muted text-primary' : ''">Home</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator class="hidden md:block" />

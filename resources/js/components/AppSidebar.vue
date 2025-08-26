@@ -13,7 +13,7 @@ import {
 } from "lucide-vue-next";
 import NavMain from '@/components/NavMain.vue';
 import NavProjects from '@/components/NavProjects.vue';
-import NavUser from '@/components/NavUser.vue';
+import NavUser from '../Layout/NavUser.vue';
 import TeamSwitcher from '@/components/TeamSwitcher.vue';
 
 import {

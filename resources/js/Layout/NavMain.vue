@@ -51,7 +51,7 @@ defineProps({
                 :key="subItem.title"
               >
                 <SidebarMenuSubButton as-child>
-                  <Link :href="subItem.url">
+                  <Link :href="subItem.url" :class="$page.url === subItem.url ? 'bg-muted text-primary' : ''">
                     <span>{{ subItem.title }}</span>
                   </Link>
                 </SidebarMenuSubButton>
