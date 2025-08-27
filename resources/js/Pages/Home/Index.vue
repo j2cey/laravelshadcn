@@ -9,6 +9,7 @@ import Layout from "../../Layout/App.vue";
 
 <template>
   <Layout>
+    <template #title>Home</template>
     <div class="flex flex-col items-center gap-1 text-center">
       <Head title="Welcome" />
       <h1 class="text-blue-600 text-center p-5">Welcome HOME</h1>

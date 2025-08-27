@@ -40,7 +40,7 @@ const submit = () => {
       <CardHeader class="text-center">
         <CardTitle class="text-xl"> Welcome back </CardTitle>
         <CardDescription>
-          Login with your Apple or Google account
+          Login to access your Account
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -55,8 +55,8 @@ const submit = () => {
               <div class="grid gap-3">
                 <div class="flex items-center">
                   <Label for="password">Password</Label>
-                  <a href="#" class="ml-auto text-sm underline-offset-4 hover:underline">
-                    Forgot your password?
+                  <a href="#" class="ml-auto text-xs underline-offset-4 hover:underline">
+                    Forgot your password ?
                   </a>
                 </div>
                 <Input id="password" type="password" v-model="form.password" :class="{'is-invalid': errors.password}" />
@@ -65,7 +65,7 @@ const submit = () => {
               <Button type="submit" class="w-full"> Sign in </Button>
             </div>
             <div class="text-center text-sm">
-              Don't have an account?
+              <small>Don't have an account ?</small>
               <Link href="/signup" class="underline underline-offset-4"> Sign up </Link>
             </div>
           </div>

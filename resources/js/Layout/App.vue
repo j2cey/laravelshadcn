@@ -38,12 +38,14 @@ import { Link } from '@inertiajs/vue3'
             <BreadcrumbList>
               <BreadcrumbItem class="hidden md:block">
                 <BreadcrumbLink>
-                  <Link href="/" :class="$page.url === '/' ? 'bg-muted text-primary' : ''">Home</Link>
+                  <Link href="/" :class="$page.url === '/' ? 'bg-muted text-primary' : ''">Acme Inc</Link>
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator class="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+                <BreadcrumbPage>
+                  <slot name="title"></slot>
+                </BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>

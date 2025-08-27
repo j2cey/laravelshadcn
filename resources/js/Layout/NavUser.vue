@@ -41,8 +41,6 @@ const { isMobile } = useSidebar();
 const form = useForm({})
 
 const logout = () => {
-  console.log("logout clicked!");
-  
   form.post('logout', {
       onError:(error) => {
           errors.value = error;
